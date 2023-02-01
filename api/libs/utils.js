@@ -74,11 +74,3 @@ module.exports = {
   converter,
   npubPrefix,
 };
-
-// test code
-const pubKeyConverter = converter('npub');
-console.log('utils.js loaded');
-console.log(pubKeyConverter.toHex('npub1tctw0jgmujwshn5k0r9ku906ycg0euw7vwyeca7ul7wayuyvhc3sfhx6f0'));
-console.log(pubKeyConverter.toBech32('5E16e7c91Be49D0BCe9678cB6E15Fa2610fCF1dE63899c77DCFf9DD2708CbE23'));
-console.log(pubKeyConverter.toBech32('0x5E16e7c91Be49D0BCe9678cB6E15Fa2610fCF1dE63899c77DCFf9DD2708CbE23'));
-console.log('utils.js ended');

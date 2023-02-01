@@ -13,8 +13,8 @@ author:
 repository:
   type: git
   url: git+https://github.com/blocklet/nostr-verifier.git
-specVersion: 1.1.1
-version: 0.1.0
+specVersion: 1.2.7
+version: 0.1.1
 logo: logo.png
 files:
   - logo.png
@@ -23,29 +23,34 @@ interfaces:
   - type: web
     name: publicUrl
     path: /
-    prefix: "*"
+    prefix: '*'
     port: BLOCKLET_PORT
     protocol: http
   - type: wellknown
     name: nostr.json
     path: /nostr.json
-    prefix: "/.well-known"
-community: ""
-documentation: ""
-homepage: ""
-license: ""
+    prefix: /.well-known
+    protocol: http
+    port: BLOCKLET_PORT
+community: ''
+documentation: ''
+homepage: ''
+license: ''
 payment:
   price: []
   share: []
 timeout:
   start: 60
 requirements:
-  server: ">=1.6.29"
-  os: "*"
-  cpu: "*"
+  server: '>=1.6.29'
+  os: '*'
+  cpu: '*'
 scripts:
   dev: npm run start
 environments: []
-capabilities: {}
+capabilities:
+  clusterMode: false
+  component: true
+  navigation: true
 screenshots: []
 components: []

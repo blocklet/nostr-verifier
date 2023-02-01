@@ -1,3 +1,7 @@
+## 0.1.4 (2023-2-2)
+
+- feat: support convert npub pubkey and eth address
+
 ## 0.1.3 (2023-2-1)
 
 - fix: incorrect relay format

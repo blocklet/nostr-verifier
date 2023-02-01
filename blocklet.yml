@@ -52,5 +52,7 @@ capabilities:
   clusterMode: false
   component: true
   navigation: true
-screenshots: []
+screenshots:
+  - config.png
+  - response.png
 components: []

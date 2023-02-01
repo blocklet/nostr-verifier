@@ -1,0 +1,148 @@
+{
+  "form": {
+    "labelCol": 6,
+    "wrapperCol": 12,
+    "colon": false,
+    "layout": "vertical",
+    "style": {
+      "padding": "16px 16px 16px 16px"
+    }
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "wn67vqzw1rh": {
+        "type": "string",
+        "x-component": "Text",
+        "x-component-props": {
+          "content": "Nostr NIP05 Settings",
+          "mode": "h2",
+          "style": {
+            "margin": "0px 0px 16px 0px"
+          }
+        },
+        "x-designable-id": "wn67vqzw1rh",
+        "x-index": 0
+      },
+      "username": {
+        "type": "string",
+        "title": "Your Nostr Username",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "username",
+        "required": true,
+        "x-designable-id": "rljl270qcxm",
+        "x-index": 1
+      },
+      "pubkey": {
+        "type": "string",
+        "title": "Your Nostr Public Key",
+        "x-decorator": "FormItem",
+        "x-component": "Input",
+        "x-validator": [],
+        "x-component-props": {},
+        "x-decorator-props": {},
+        "name": "pubkey",
+        "required": true,
+        "x-designable-id": "c7kpfl3gx6h",
+        "x-index": 2
+      },
+      "relays": {
+        "type": "array",
+        "x-decorator": "FormItem",
+        "x-component": "ArrayTable",
+        "x-validator": [],
+        "x-component-props": {
+          "showHeader": false,
+          "bordered": true
+        },
+        "x-decorator-props": {},
+        "name": "relays",
+        "default": [{"relay":"wss://relay.damus.io"}],
+        "title": "Your preferred relays",
+        "required": true,
+        "x-designable-id": "ghdqzoxn92o",
+        "items": {
+          "type": "object",
+          "x-designable-id": "h40knq5h4j9",
+          "properties": {
+            "ffj4c2kyswz": {
+              "type": "void",
+              "x-component": "ArrayTable.Column",
+              "x-component-props": {
+                "title": "Relay",
+                "style": {
+                  "width": "80%"
+                }
+              },
+              "x-designable-id": "ffj4c2kyswz",
+              "properties": {
+                "relay": {
+                  "type": "string",
+                  "title": "",
+                  "x-decorator": "FormItem",
+                  "x-component": "Input",
+                  "x-validator": [
+                  ],
+                  "x-component-props": {
+                    "placeholder": "Please input relay URL"
+                  },
+                  "x-decorator-props": {},
+                  "name": "relay",
+                  "required": true,
+                  "x-designable-id": "uo3e9cegwjv",
+                  "x-index": 0
+                }
+              },
+              "x-index": 0
+            },
+            "qwuagbxbn39": {
+              "type": "void",
+              "x-component": "ArrayTable.Column",
+              "x-component-props": {
+                "title": "Actions"
+              },
+              "x-designable-id": "qwuagbxbn39",
+              "properties": {
+                "0aw450695om": {
+                  "type": "void",
+                  "x-component": "ArrayTable.Remove",
+                  "x-designable-id": "0aw450695om",
+                  "x-index": 0
+                },
+                "bcjo8w7e5km": {
+                  "type": "void",
+                  "x-component": "ArrayTable.MoveDown",
+                  "x-designable-id": "bcjo8w7e5km",
+                  "x-index": 1
+                },
+                "1xrk2c5atwr": {
+                  "type": "void",
+                  "x-component": "ArrayTable.MoveUp",
+                  "x-designable-id": "1xrk2c5atwr",
+                  "x-index": 2
+                }
+              },
+              "x-index": 1
+            }
+          }
+        },
+        "x-index": 3,
+        "properties": {
+          "xbclgibwks0": {
+            "type": "void",
+            "title": "Add",
+            "x-component": "ArrayTable.Addition",
+            "x-component-props": {},
+            "x-designable-id": "xbclgibwks0",
+            "x-index": 0
+          }
+        }
+      }
+    },
+    "x-designable-id": "gjti8tkpvvu"
+  }
+}

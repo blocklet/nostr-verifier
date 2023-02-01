@@ -27,9 +27,11 @@ app.get('/.well-known/nostr.json', (req, res) => {
         names: {
           [name]: env.preferences.pubkey,
         },
-        relays: {
-          [name]: (env.preferences.relays || []).map((x) => x.relay).filter(Boolean),
-        },
+        relays: env.preferences.pubkey
+          ? {
+              [env.preferences.pubkey]: (env.preferences.relays || []).map((x) => x.relay).filter(Boolean),
+            }
+          : {},
       });
     }
   } else {

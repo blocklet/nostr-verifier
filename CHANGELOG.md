@@ -1,3 +1,7 @@
+## 0.1.6 (2023-2-2)
+
+- fix: well-known interface prefix
+
 ## 0.1.5 (2023-2-2)
 
 - feat: return same response on home

@@ -28,8 +28,8 @@ interfaces:
     protocol: http
   - type: wellknown
     name: nostr.json
-    path: /nostr.json
-    prefix: /.well-known
+    path: /
+    prefix: /.well-known/nostr.json
     protocol: http
     port: BLOCKLET_PORT
 community: ''
